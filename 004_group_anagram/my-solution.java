@@ -26,7 +26,7 @@ class Solution {
         
         // Return all values in the map as a list of lists
         return new ArrayList<>(map.values());
-    }
+    }   
 
     public List<List<String>> groupAnagramsOptimized(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
