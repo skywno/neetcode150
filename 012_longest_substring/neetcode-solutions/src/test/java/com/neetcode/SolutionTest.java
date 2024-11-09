@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
 
 	@Test
-	@DisplayName("Test naive method 1")
+	@DisplayName("Test naive method 1")             
 	void test1() {
         Solution solution = new Solution();
         assertEquals(3, solution.lengthOfLongestSubstring_naive("zxyzxyz"));                     
@@ -18,7 +18,7 @@ class SolutionTest {
 	@DisplayName("Test naive method 2")
 	void test2() {
         Solution solution = new Solution();
-        assertEquals(1, solution.lengthOfLongestSubstring_naive("xxxx"));                     
+        assertEquals(1, solution.       lengthOfLongestSubstring_naive("xxxx"));                     
 	}
 
 	@Test
