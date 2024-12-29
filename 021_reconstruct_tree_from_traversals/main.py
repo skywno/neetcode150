@@ -27,6 +27,6 @@ class Solution:
         right_preorder = preorder[1 + len(left_inorder):]
 
         root.left = self.buildTree(left_preorder, left_inorder)
-        root.right = self.buildTree(right_preorder, right_inorder)
+        root.right = self.buildTree(right_preorder,  right_inorder)
 
         return root
