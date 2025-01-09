@@ -1,6 +1,9 @@
 package com.neetcode.solutions.combination_sum;
 
 import org.junit.jupiter.api.Test;
+
+import com.neetcode.solutions.backtracking.combination_sum.Solution;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.List;
