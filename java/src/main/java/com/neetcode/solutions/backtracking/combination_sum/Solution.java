@@ -1,4 +1,4 @@
-package com.neetcode.solutions.combination_sum;
+package com.neetcode.solutions.backtracking.combination_sum;
 
 import java.util.ArrayList;
 import java.util.List;
