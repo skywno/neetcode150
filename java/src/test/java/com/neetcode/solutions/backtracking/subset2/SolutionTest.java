@@ -33,7 +33,7 @@ public class SolutionTest {
 
     @Test
     public void testExample2() {
-        int[] nums = {7, 7};
+        int[] nums = {7, 7}; 
         List<List<Integer>> result = solution.subsetsWithDup(nums);
         
         // Expected subsets: [[],[7],[7,7]]
