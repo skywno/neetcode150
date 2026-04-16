@@ -14,16 +14,12 @@ class Solution:
         def visit(node: Optional[Node]):
             if node is None:
                 return None
-            if node not in visited.keys():
+            if node in visited:
+                return visited[node]  
+            else:
                 clone = Node(node.val)
                 visited[node] = clone
-                # we don't know the neighbors yet.
-                for neighbor in node.neighbors:
-                    neighbor_clone = visit(neighbor)
-                    if neighbor_clone is not None:
-                        clone.neighbors.append(neighbor_clone) 
+                clone.neighbors = [c for c in (visit(n) for n in node.neighbors) if c is not None]
                 return clone
-            else:
-                return visited[node]
 
         return visit(node)
